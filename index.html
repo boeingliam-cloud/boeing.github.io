@@ -29,9 +29,9 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
-      font-family: 'DM Mono', monospace;
+      font-family: 'DM Mono', 'Courier New', monospace;
       background: var(--bg);
-      color: var(--text);
+      color: #e8e8f0;
       min-height: 100vh;
       overflow-x: hidden;
     }
@@ -94,7 +94,7 @@
       display: flex; align-items: center; justify-content: space-between;
     }
     .nav-logo {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Syne', 'Segoe UI', Arial, sans-serif;
       font-weight: 800; font-size: 1.1rem;
       letter-spacing: -0.02em;
       color: var(--accent);
@@ -138,7 +138,7 @@
     }
 
     h1 {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Syne', 'Segoe UI', Arial, sans-serif;
       font-size: clamp(3rem, 8vw, 6rem);
       font-weight: 800;
       line-height: 1.02;
@@ -161,7 +161,7 @@
       display: inline-flex; align-items: center; gap: 8px;
       padding: 12px 24px;
       border-radius: 8px;
-      font-family: 'DM Mono', monospace;
+      font-family: 'DM Mono', 'Courier New', monospace;
       font-size: 0.82rem;
       font-weight: 400;
       cursor: pointer;
@@ -187,7 +187,7 @@
       border-top: 1px solid var(--border);
     }
     .stat-val {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Syne', 'Segoe UI', Arial, sans-serif;
       font-size: 2rem; font-weight: 800;
       color: var(--text);
     }
@@ -207,7 +207,7 @@
       margin-bottom: 10px;
     }
     .section-title {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Syne', 'Segoe UI', Arial, sans-serif;
       font-size: clamp(1.6rem, 4vw, 2.4rem);
       font-weight: 800;
       letter-spacing: -0.03em;
@@ -274,7 +274,7 @@
       margin-bottom: 12px;
     }
     .project-title {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Syne', 'Segoe UI', Arial, sans-serif;
       font-size: 1.05rem; font-weight: 700;
       margin-bottom: 10px;
     }
@@ -329,14 +329,14 @@
       background: linear-gradient(90deg, var(--accent), var(--accent2));
     }
     .stat-card-num {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Syne', 'Segoe UI', Arial, sans-serif;
       font-size: 2.4rem; font-weight: 800;
       color: var(--accent);
       line-height: 1;
       margin-bottom: 6px;
     }
     .stat-card-label {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Syne', 'Segoe UI', Arial, sans-serif;
       font-size: 0.88rem; font-weight: 700;
       color: var(--text);
       margin-bottom: 4px;
@@ -347,7 +347,7 @@
       line-height: 1.5;
     }
     .showcase-title {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Syne', 'Segoe UI', Arial, sans-serif;
       font-size: 1rem; font-weight: 700;
       color: var(--sub);
       letter-spacing: 0.05em;
@@ -355,7 +355,7 @@
       margin-bottom: 20px;
     }
     .project-card code {
-      font-family: 'DM Mono', monospace;
+      font-family: 'DM Mono', 'Courier New', monospace;
       font-size: 0.78rem;
       color: var(--accent3);
       background: rgba(67,232,180,0.08);
@@ -375,7 +375,7 @@
     .exp-item:last-child { border-bottom: none; }
     .exp-date { font-size: 0.75rem; color: var(--muted); padding-top: 4px; line-height: 1.5; }
     .exp-title {
-      font-family: 'Syne', sans-serif;
+      font-family: 'Syne', 'Segoe UI', Arial, sans-serif;
       font-size: 1rem; font-weight: 700;
       margin-bottom: 4px;
     }
@@ -486,8 +486,7 @@
         <span class="line2">Developer &amp; Builder</span>
       </h1>
       <p class="hero-desc">
-        <!-- ✏️ EDIT: Write a short bio here -->
-        I build fast, thoughtful software — from polished web experiences to powerful backend systems. Obsessed with clean code and interfaces that feel effortless.
+        Developer from Australia with 3+ years of experience building websites, Discord bots, Lua systems, and JavaScript projects. I take on freelance and commission work — and I always deliver exactly what you need.
       </p>
       <div class="hero-ctas">
         <a href="#projects" class="btn btn-primary">View Projects</a>
@@ -495,7 +494,6 @@
       </div>
 
       <div class="hero-stats">
-        <!-- ✏️ EDIT: Change these stats -->
         <div>
           <div class="stat-val">3+</div>
           <div class="stat-lbl">Years coding</div>
@@ -505,8 +503,8 @@
           <div class="stat-lbl">Projects shipped</div>
         </div>
         <div>
-          <div class="stat-val">5</div>
-          <div class="stat-lbl">Open-source repos</div>
+          <div class="stat-val">50+</div>
+          <div class="stat-lbl">Happy clients</div>
         </div>
       </div>
     </section>
@@ -616,31 +614,30 @@
       <div class="section-title fade-up">Where I've worked</div>
       <div class="experience-list">
 
-        <!-- ✏️ EDIT: Replace with your real experience -->
         <div class="exp-item fade-up">
-          <div class="exp-date">2023 — Now</div>
+          <div class="exp-date">2022 — Now</div>
           <div>
-            <div class="exp-title">Software Engineer</div>
-            <div class="exp-company">Company Name</div>
-            <div class="exp-desc">Built and maintained core product features. Led migration from REST to GraphQL. Reduced API response times by 40% through query optimization.</div>
+            <div class="exp-title">Freelance Developer</div>
+            <div class="exp-company">Self-employed</div>
+            <div class="exp-desc">Taking on commissions and freelance work across web development, Discord bots, Lua scripting, and JavaScript. Delivered 200+ projects with consistent 4–5 star ratings from clients.</div>
           </div>
         </div>
 
         <div class="exp-item fade-up">
-          <div class="exp-date">2022 — 2023</div>
+          <div class="exp-date">2022 — Now</div>
           <div>
-            <div class="exp-title">Frontend Developer</div>
-            <div class="exp-company">Another Company</div>
-            <div class="exp-desc">Developed accessible, performant UI components used across 6 product teams. Introduced component testing standards that cut regression bugs by 60%.</div>
+            <div class="exp-title">Discord Bot Developer</div>
+            <div class="exp-company">Commission work</div>
+            <div class="exp-desc">Built 50+ custom Discord bots in Python using discord.py — including utility bots, roleplay management systems, economy bots, and colour tools. All bots rated 4–5 stars.</div>
           </div>
         </div>
 
         <div class="exp-item fade-up">
-          <div class="exp-date">2021 — 2022</div>
+          <div class="exp-date">2022 — Now</div>
           <div>
-            <div class="exp-title">Junior Developer</div>
-            <div class="exp-company">Startup Name</div>
-            <div class="exp-desc">Shipped features end-to-end in a small, fast-moving team. Primary focus on data pipeline reliability and dashboard visualizations.</div>
+            <div class="exp-title">Lua Scripter</div>
+            <div class="exp-company">Commission work</div>
+            <div class="exp-desc">Scripted over 100 custom Lua systems for clients — covering game mechanics, UI, automation, and server-side logic, all built to exact client specifications.</div>
           </div>
         </div>
 
@@ -660,7 +657,7 @@
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
             Email me
           </a>
-          <a href="https://github.com/boeing" target="_blank" class="contact-link">
+          <a href="https://github.com/boeingliam-cloud" target="_blank" class="contact-link">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
             GitHub
           </a>
